@@ -3,7 +3,7 @@ const weather = require('./assets/weather.json')
 const cors =require('cors')
 // require('dotenv').config()
 const app = express()
-
+const PORT = process.env.PORT || 3841
 app.use(cors())
 
 app.get('/', function (req, res) {
@@ -21,4 +21,4 @@ class Weather{
     }
 }
 
-app.listen(3099)
+app.listen(PORT)
