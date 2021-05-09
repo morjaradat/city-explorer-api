@@ -40,6 +40,7 @@ class Weather {
   constructor(data) {
     this.date = data.valid_date;
     this.description = data.weather.description;
+    this.temp=data.temp
   }
 }
 
